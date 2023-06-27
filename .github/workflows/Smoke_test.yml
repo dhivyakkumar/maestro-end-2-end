@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Download a file
-      - run: curl ttps://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public -o downloadfile.apk
+      - run: curl https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public -o downloadfile.apk
           
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
         with:
