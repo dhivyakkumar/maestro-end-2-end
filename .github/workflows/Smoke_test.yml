@@ -21,8 +21,8 @@ jobs:
       name: Download the file
         with:
           url: "https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public"
-          target: assets
-          auto-match: true
+          target: public/
+          filename: downloadfile.apk
           
       - run: maestro cloud downloadfile.apk maestro-end-2-end/
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
