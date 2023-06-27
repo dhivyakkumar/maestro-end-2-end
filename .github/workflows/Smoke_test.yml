@@ -13,12 +13,13 @@ jobs:
 
       - name: Download the file
         uses: suisei-cn/actions-download-file@v1
-        id: downloadfile.apk
+        id: downloadfile
       
         with:
           url: "https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public"
           target: assets
           auto-match: true
+          filename: downloadfile.apk
           
       - run: maestro cloud downloadfile.apk maestro-end-2-end/
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
