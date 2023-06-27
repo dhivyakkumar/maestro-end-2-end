@@ -6,6 +6,8 @@ env:
 - tapOn: "ASK ME IN A DAY"
 - tapOn:
     id: "com.kaching.merchant.kiwi:id/btn_login"
+- tapOn: "Accept & continue" # Comment out when running locally
+- tapOn: "No thanks" # Comment out when running locally
 - tapOn: "Email address"
 - inputText: ${USERNAME}
 - tapOn: "Next"

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites>
-  <testsuite name="Test Suite" device="emulator-5554" tests="1" failures="0" time="64">
-    <testcase id="android_flow" name="android_flow" classname="android_flow" time="64"/>
+  <testsuite name="Test Suite" device="emulator-5554" tests="1" failures="0" time="57">
+    <testcase id="android_flow" name="android_flow" classname="android_flow" time="57"/>
   </testsuite>
 </testsuites>

@@ -2,9 +2,14 @@
 
 # appId: com.kaching.merchant.dodo
 appId: com.kaching.merchant.kiwi
+tags:
+  - smokeTest
 ---
 - launchApp:
     clearState: true
-- runFlow: "auth/login.yaml"
-- runFlow: "home/home_screen.yaml"
-- runFlow: "profile/profile_screen.yaml"
+- runFlow: 
+    file: "auth/login.yaml"
+- runFlow: 
+    file: "home/home_screen.yaml"
+- runFlow: 
+    file: "profile/profile_screen.yaml"

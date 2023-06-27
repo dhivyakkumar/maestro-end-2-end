@@ -23,7 +23,7 @@ maestro test --format junit android_flow.yaml
 ## Running in Maestro Cloud:
 ```
 1. maestro login
-2. maestro cloud sample.apk flow.yaml
+2. maestro cloud app-app-kiwi-release.apk maestro-end-2-end/
 ```
 
 ## Launch Maestro Studio for identify UI elements:
