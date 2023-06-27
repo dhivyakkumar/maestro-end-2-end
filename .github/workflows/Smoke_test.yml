@@ -11,11 +11,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - run: curl https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public -o downloadfile.apk
-          
+      - uses: suisei-cn/actions-download-file@v1.3.0
+        id: downloadfile  # Remember to give an ID if you need the output filename
+        name: Download the file
+        with:
+         url: curl https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public
+         target: public/
+         filename: downloadfile.apk
+
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
           app-file: downloadfile.apk
           
-      - run: maestro cloud downloadfile.apk maestro-end-2-end/
+      - run: maestro cloud public/downloadfile.apk maestro-end-2-end/
