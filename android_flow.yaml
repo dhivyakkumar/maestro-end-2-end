@@ -1,0 +1,10 @@
+# flow.yaml
+
+# appId: com.kaching.merchant.dodo
+appId: com.kaching.merchant.kiwi
+---
+- launchApp:
+    clearState: true
+- runFlow: "auth/login.yaml"
+- runFlow: "home/home_screen.yaml"
+- runFlow: "profile/profile_screen.yaml"

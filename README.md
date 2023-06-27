@@ -10,10 +10,14 @@ curl -Ls "https://get.maestro.mobile.dev" | bash
 
 ## Running locally: 
 1. Make sure we have a emulator running on your laptop.
-2. Install the apk file from https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public
+2. Install the apk file from https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public in the emulator.
 
 ```
-maestro test flow.yaml
+maestro test android_flow.yaml
+```
+And inorder to get the report summary
+```
+maestro test --format junit android_flow.yaml
 ```
 
 ## Running in Maestro Cloud:

@@ -1,0 +1,13 @@
+appId: com.kaching.merchant.kiwi
+env:
+    USERNAME: dev_kretamfe@sumup.com
+    PASSWORD: extdev
+---
+- tapOn: "ASK ME IN A DAY"
+- tapOn:
+    id: "com.kaching.merchant.kiwi:id/btn_login"
+- tapOn: "Email address"
+- inputText: ${USERNAME}
+- tapOn: "Next"
+- inputText: ${PASSWORD}
+- tapOn: "Next"

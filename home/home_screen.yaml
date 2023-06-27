@@ -1,0 +1,10 @@
+appId: com.kaching.merchant.kiwi
+---
+- assertVisible:
+    id: "com.kaching.merchant.kiwi:id/menu_home"
+- assertVisible:
+    id: "com.kaching.merchant.kiwi:id/menu_checkout"
+- assertVisible:
+    id: "com.kaching.merchant.kiwi:id/menu_tx_history"
+- tapOn:
+    id: "com.kaching.merchant.kiwi:id/ivProfilePlaceholder"
