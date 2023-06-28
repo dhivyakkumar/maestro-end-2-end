@@ -15,8 +15,8 @@ jobs:
         id: downloadfile  # Remember to give an ID if you need the output filename
         name: Download the file
         with:
-         url: curl https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public
-         target: public/
+         url: https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public
+         target: /
          filename: downloadfile.apk
 
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
@@ -24,4 +24,4 @@ jobs:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
           app-file: downloadfile.apk
           
-      - run: maestro cloud public/downloadfile.apk maestro-end-2-end/
+      - run: maestro cloud downloadfile.apk maestro-end-2-end/
