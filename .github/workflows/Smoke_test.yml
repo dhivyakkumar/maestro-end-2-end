@@ -21,6 +21,6 @@ jobs:
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
-          app-file: app-app-kiwi-release.apk.apk
+          app-file: app-app-kiwi-release.apk
           
       - run: maestro cloud app-app-kiwi-release.apk maestro-end-2-end/
