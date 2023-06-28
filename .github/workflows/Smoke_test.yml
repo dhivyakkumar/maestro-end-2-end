@@ -16,12 +16,11 @@ jobs:
         name: Download the file
         with:
          url: https://install.appcenter.ms/orgs/sumup/apps/sumup-android-kiwi/distribution_groups/ucars-public
-         target: /
-         filename: downloadfile.apk
+         filename: app-app-kiwi-release.apk
 
       - uses: mobile-dev-inc/action-maestro-cloud@v1.1.1
         with:
           api-key: ${{ secrets.MAESTRO_CLOUD_API_KEY }}
-          app-file: downloadfile.apk
+          app-file: app-app-kiwi-release.apk.apk
           
-      - run: maestro cloud downloadfile.apk maestro-end-2-end/
+      - run: maestro cloud app-app-kiwi-release.apk maestro-end-2-end/
