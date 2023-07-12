@@ -6,5 +6,19 @@ appId: com.sumup.merchant.debugenterprise
     id: "tab-bar-item-1"
 - assertVisible:
     id: "tab-bar-item-2"
+- tapOn: "Ready, set, get paid!"
+- assertVisible: "Rescan"
+- tapOn: "Cancel"
+- tapOn: "Get a 10% fee discount"
+- assertVisible:
+    id: "SumUp Business Account"
+- tapOn: "Close"
+- tapOn: "Online Store"
+- assertVisible: "Publish"
+- tapOn: "Close"
+- tapOn: "Payment Links"
+- assertVisible:
+    id: "Payment Links"
+- tapOn: "Dismiss"
 - tapOn:
     id: "profile-button"

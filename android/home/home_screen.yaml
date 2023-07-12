@@ -7,4 +7,28 @@ appId: com.kaching.merchant.kiwi
 - assertVisible:
     id: "com.kaching.merchant.kiwi:id/menu_tx_history"
 - tapOn:
+    id: "com.kaching.merchant.kiwi:id/tvMenuTitle"
+- assertVisible:
+    id: "com.kaching.merchant.kiwi:id/btn_footer_primary"
+- tapOn:
+    id: "com.kaching.merchant.kiwi:id/btn_close"
+- tapOn:
+    id: "com.kaching.merchant.kiwi:id/container_product1"
+    index: 1
+- back
+- tapOn:
+    id: "com.kaching.merchant.kiwi:id/itemHomeRoot"
+    index: 2
+- assertVisible:
+    id: "com.kaching.merchant.kiwi:id/general_edit_button"
+- back
+- tapOn:
+    id: "com.kaching.merchant.kiwi:id/itemHomeRoot"
+    index: 4
+- assertVisible:
+    id: "com.kaching.merchant.kiwi:id/toolbar"
+- tapOn:
+    id: "com.kaching.merchant.kiwi:id/toolbar_close"
+- back
+- tapOn:
     id: "com.kaching.merchant.kiwi:id/ivProfilePlaceholder"
