@@ -1,5 +1,14 @@
 # flow.yaml
 
-appId: com.apple.Health
+appId: com.sumup.merchant.debugenterprise
+tags:
+  - smokeTest
 ---
-- launchApp
+- launchApp:
+    clearState: true
+- runFlow: 
+    file: "iOS/auth/login.yaml"
+- runFlow: 
+    file: "iOS/home/home_screen.yaml"
+- runFlow: 
+    file: "iOS/profile/profile_screen.yaml"

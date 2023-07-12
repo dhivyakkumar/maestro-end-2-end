@@ -1,0 +1,10 @@
+appId: com.sumup.merchant.debugenterprise
+---
+- assertVisible:
+    id: "tab-bar-item-0"
+- assertVisible:
+    id: "tab-bar-item-1"
+- assertVisible:
+    id: "tab-bar-item-2"
+- tapOn:
+    id: "profile-button"

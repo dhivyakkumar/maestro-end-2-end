@@ -8,8 +8,8 @@ tags:
 - launchApp:
     clearState: true
 - runFlow: 
-    file: "auth/login.yaml"
+    file: "android/auth/login.yaml"
 - runFlow: 
-    file: "home/home_screen.yaml"
+    file: "android/home/home_screen.yaml"
 - runFlow: 
-    file: "profile/profile_screen.yaml"
+    file: "android/profile/profile_screen.yaml"

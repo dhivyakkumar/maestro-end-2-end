@@ -1,0 +1,10 @@
+appId: com.sumup.merchant.debugenterprise
+---
+- scrollUntilVisible:
+    element:
+      text: "Log out" 
+- assertVisible: "Log out"
+- extendedWaitUntil:
+    visible: "Log out"
+    timeout: 10000
+- tapOn: "Log out"

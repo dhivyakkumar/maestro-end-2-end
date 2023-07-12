@@ -1,0 +1,14 @@
+appId: com.sumup.merchant.debugenterprise
+
+env:
+    USERNAME: dev_kretamfe@sumup.com
+    PASSWORD: extdev
+---
+- tapOn:
+    id: "WelcomeContentLoginButton"
+- assertVisible: "you@example.com"
+- tapOn: "you@example.com"
+- inputText: ${USERNAME}
+- tapOn: "Next"
+- inputText: ${PASSWORD}
+- tapOn: "Next"

@@ -1,2 +1,3 @@
 flows:
   - android_flow.yaml
+  - ios_flow.yaml
