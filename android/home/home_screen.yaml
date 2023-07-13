@@ -8,10 +8,7 @@ appId: com.kaching.merchant.kiwi
     id: "com.kaching.merchant.kiwi:id/menu_tx_history"
 - tapOn:
     id: "com.kaching.merchant.kiwi:id/tvMenuTitle"
-- assertVisible:
-    id: "com.kaching.merchant.kiwi:id/btn_footer_primary"
-- tapOn:
-    id: "com.kaching.merchant.kiwi:id/btn_close"
+- back
 - tapOn:
     id: "com.kaching.merchant.kiwi:id/container_product1"
     index: 1
