@@ -1,9 +1,6 @@
 appId: com.kaching.merchant.kiwi
-env:
-    USERNAME: dev_kretamfe@sumup.com
-    PASSWORD: extdev
 ---
-- tapOn: "ASK ME IN A DAY"
+- tapOn: "ASK ME IN A DAY" # Comment out when running locally
 - tapOn:
     id: "com.kaching.merchant.kiwi:id/btn_login"
 - tapOn: "Accept & continue" # Comment out when running locally

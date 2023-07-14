@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <testsuites>
-  <testsuite name="Test Suite" device="emulator-5554" tests="1" failures="0" time="57">
-    <testcase id="android_flow" name="android_flow" classname="android_flow" time="57"/>
+  <testsuite name="Test Suite" device="iPhone 14 - iOS 16.4 - D05F38AA-4D12-46A9-92A6-BA9CEDADE953" tests="1" failures="0" time="58">
+    <testcase id="ios_flow" name="ios_flow" classname="ios_flow" time="58"/>
   </testsuite>
 </testsuites>

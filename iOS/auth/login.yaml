@@ -9,6 +9,7 @@ env:
 - assertVisible: "you@example.com"
 - tapOn: "you@example.com"
 - inputText: ${USERNAME}
-- tapOn: "Next"
+- tapOn: 
+    point: "50%, 47%"
 - inputText: ${PASSWORD}
 - tapOn: "Next"

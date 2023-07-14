@@ -1,7 +1,9 @@
 appId: com.kaching.merchant.kiwi
 ---
+- tapOn:
+    id: "com.kaching.merchant.kiwi:id/ivProfilePlaceholder"
 - scrollUntilVisible:
     element:
       text: "Logout" 
 - tapOn:
-    id: "com.kaching.merchant.kiwi:id/itemProfileMenuLayout"
+    text: "Logout" 

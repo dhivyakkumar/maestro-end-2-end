@@ -2,14 +2,12 @@ appId: com.kaching.merchant.kiwi
 tags:
   - smokeTest
 env:
-    USERNAME: dev_kretamfe@sumup.com
+    USERNAME: dev_xnor3w0x@sumup.com
     PASSWORD: extdev
 ---
 - launchApp:
     clearState: true
 - runFlow: 
     file: "android/auth/login.yaml"
-- runFlow: 
-    file: "android/home/home_screen.yaml"
 - runFlow: 
     file: "android/profile/profile_screen.yaml"

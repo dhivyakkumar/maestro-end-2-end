@@ -1,0 +1,12 @@
+# flow.yaml
+
+appId: com.sumup.merchant.debugenterprise
+tags:
+  - smokeTest
+---
+- launchApp:
+    clearState: true
+- runFlow: 
+    file: "iOS/auth/login.yaml"
+- runFlow: 
+    file: "iOS/profile/profile_screen.yaml"

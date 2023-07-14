@@ -1,24 +1,33 @@
 appId: com.kaching.merchant.kiwi
 ---
+# Assert Home Screen home, checkout and Sales Icon
 - assertVisible:
     id: "com.kaching.merchant.kiwi:id/menu_home"
 - assertVisible:
     id: "com.kaching.merchant.kiwi:id/menu_checkout"
 - assertVisible:
     id: "com.kaching.merchant.kiwi:id/menu_tx_history"
+
+# Setup Card reader to start payment banner
 - tapOn:
     id: "com.kaching.merchant.kiwi:id/tvMenuTitle"
 - back
+
+# Activate Business Account banner
 - tapOn:
     id: "com.kaching.merchant.kiwi:id/container_product1"
     index: 1
 - back
+
+# Online Store title
 - tapOn:
     id: "com.kaching.merchant.kiwi:id/itemHomeRoot"
     index: 2
 - assertVisible:
     id: "com.kaching.merchant.kiwi:id/general_edit_button"
 - back
+
+# Payment links title
 - tapOn:
     id: "com.kaching.merchant.kiwi:id/itemHomeRoot"
     index: 4
@@ -27,5 +36,3 @@ appId: com.kaching.merchant.kiwi
 - tapOn:
     id: "com.kaching.merchant.kiwi:id/toolbar_close"
 - back
-- tapOn:
-    id: "com.kaching.merchant.kiwi:id/ivProfilePlaceholder"

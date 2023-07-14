@@ -1,5 +1,7 @@
 appId: com.sumup.merchant.debugenterprise
 ---
+- tapOn:
+    id: "profile-button"
 - scrollUntilVisible:
     element:
       text: "Log out" 

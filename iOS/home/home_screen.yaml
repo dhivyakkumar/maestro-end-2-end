@@ -20,5 +20,3 @@ appId: com.sumup.merchant.debugenterprise
 - assertVisible:
     id: "Payment Links"
 - tapOn: "Dismiss"
-- tapOn:
-    id: "profile-button"
