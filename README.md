@@ -30,3 +30,4 @@ maestro test --format junit android_flow.yaml
 ```
 maestro studio
 ```
+
